@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count="5">
+	<parameter name="URL" value="https://www.airbnb.co.in/"/>
+	<parameter name="AGE" value="25"/>
+	<test thread-count="5" name="Test">
+		
+		<classes>
+			<class name="testngTutorial.testngTutorial.Day1"></class>
+			<class name="testngTutorial.testngTutorial.Day2"></class>
+				<class name="testngTutorial.testngTutorial.Listeners"></class>
+			<class name="demo.Day3"></class>
+
+		</classes>
+
+	</test> <!-- Test -->
+	
+	<test thread-count="5" name="Test1">
+		
+		<classes>
+			<class name="testngTutorial.testngTutorial.Day1"></class>
+			<class name="testngTutorial.testngTutorial.Day2"></class>
+				<class name="testngTutorial.testngTutorial.Listeners"></class>
+			<class name="demo.Day3"></class>
+
+		</classes>
+
+	</test> <!-- Test -->
+	
+<listeners>
+	<listener class-name="testngTutorial.testngTutorial.Listeners"></listener>
+</listeners>
+
+</suite> 
+
+
